@@ -30,7 +30,7 @@ app.use(`/api/v1/image/`, require('./route/imageRoute'))
 app.use(`/api/v1/order/`, require('./route/orderRoute'))
 
 app.all('*', (req,res,next) => {
-    res.status(404).json({ msg: `requested path not found, try '/api/v1/'`})
+    res.status(404).json({ msg: `requeste path not found, try '/api/v1/'`})
     next()
 })
 
